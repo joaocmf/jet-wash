@@ -70,9 +70,13 @@ header img {
     transition: 0.5s;
 }
 
-.slide-box img {
+.slide-box{
     width: 100%;
     height: 50%;
+}
+.slide-box img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -81,14 +85,14 @@ header img {
     padding: 0.4rem;
 }
 
-section .img-slider {
+.img-slider {
     margin: 0 auto;
     padding: 0;
     width: 100%;
     height: auto;
     overflow: hidden;
-}
 
+}
 .container-img input {
     display: none;
 }
@@ -101,7 +105,7 @@ section .img-slider {
 
 .slide-box {
     width: 25%;
-    height: auto;
+    height: 40rem;
     position: relative;
     text-align: center;
     transition: 1s;
@@ -155,3 +159,110 @@ section .img-slider {
 #radio3:checked~.primeira {
     margin-left: -50%;
 }
+
+
+
+
+.about{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.about h1{
+    text-align: center;
+    color: aliceblue;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+.container-about{ 
+    display: flex;
+    background-color: #707070;
+    padding: 2%;
+    border-radius: 30px;
+}
+
+.img-about{
+    margin-right: 3rem;
+    
+}
+
+.img-about img{
+    width: 50rem;
+    border-radius: 30px;
+    margin-top: 5%;
+}
+
+.text-about{
+    width: 50rem;
+    text-align: justify;
+    justify-content: center;
+}
+
+.text-about p{
+    font-weight: 700;
+    font-size: 130%;
+    color: #272727;
+    text-align: justify;
+    display: grid;
+    place-items: center; 
+    height: 200px; 
+}
+
+.container-avaliation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    
+    margin: 0 auto;
+}
+
+.container-img-ava {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 200%;
+}
+
+.container-img-ava img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container-avaliation button {
+    background-color: transparent;
+    border: none;
+    color: #5a5a5a;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.container-avaliation button:hover {
+    color: #ff0000;
+}
+
+#prev-button{
+    margin-right: 90%;
+}
+
+#next-button{
+    margin-left: 90%;
+}
+
+.container-avaliation button:hover {
+    font-size: 2.5rem;
+}
+
+
+
