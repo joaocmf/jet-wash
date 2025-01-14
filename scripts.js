@@ -17,26 +17,16 @@ function proximaImg(){
 
 
 
-//Slider das avaliações
-const slider = document.querySelector('.container-img-ava');
-const slides = document.querySelectorAll('.container-img-ava img');
-const btnPrev = document.getElementById('prev-button');
-const btnNext = document.getElementById('next-button');
-
-let currentSlide = 0;
-
-function updateSliderPosition() {
-    const slideWidth = slides[0].clientWidth;
-    slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+function mostrarMenu(){
+    document.getElementById("")
 }
 
-btnNext.addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateSliderPosition();
-});
 
-btnPrev.addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    updateSliderPosition();
-});
+
+
+
+
+
+
+
 
