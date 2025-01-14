@@ -60,7 +60,7 @@ header img {
 
 .navbar a {
     text-decoration: none;
-   
+
     color: #000000;
     margin: 2rem;
     font-weight: 600;
@@ -72,22 +72,53 @@ header img {
     transition: 0.5s;
 }
 
-.menu-icon{
+.menu-icon {
     display: none;
 }
 
-@media (max-width:780px){
-    .navbar a{
-        display: none;
+@media (max-width:780px) {
+
+    .menu-icon {
+        display: block;
+        margin: 1rem;
     }
-    .menu-icon{
-       display: block;
-       margin: 1.5rem;
-    }
-    .menu-icon img{
+
+    .menu-icon img {
         width: 2rem;
         height: 2rem;
     }
+
+    .menu-navbar{
+        z-index: 100;
+
+    }
+
+    #menuLinks{
+        background-color: #ff000000;
+    }
+
+
+
+    .navbar {
+        background-color: #5c5c5c;
+        padding-bottom: 2rem;
+        
+        height: 10rem;
+        z-index: 100;
+        flex-direction: column;
+    }
+
+    .navbar a {
+        display: none;
+        margin-top: 2%;
+    }
+
+
+
+
+
+
+
 }
 
 
@@ -193,13 +224,13 @@ header img {
 
 
 @media (max-width: 2950px) {
-   .slide-auto{
-    display: none;
-   }
+    .slide-auto {
+        display: none;
+    }
 
-   .slide-manual{
-    display: none;
-   }
+    .slide-manual {
+        display: none;
+    }
 }
 
 
@@ -258,7 +289,7 @@ header img {
     .container-about {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;       
+        justify-content: space-around;
     }
 
     .img-about {
@@ -266,12 +297,13 @@ header img {
         max-width: 25rem;
     }
 
-    .img-about img{
+    .img-about img {
         width: 100%;
     }
+
     .text-about p {
         font-size: 1rem;
-        
+
     }
 }
 
@@ -290,9 +322,9 @@ header img {
 
     .text-about p {
         font-size: 0.9rem;
-        
+
     }
-  
+
 }
 
 @media (max-width: 480px) {
@@ -325,7 +357,7 @@ header img {
     margin-right: 5%;
 }
 
-.packages h1{
+.packages h1 {
     text-align: center;
     color: aliceblue;
     font-weight: 900;
@@ -337,79 +369,83 @@ header img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    grid-template-columns: repeat(4, 1fr); /* 4 colunas padrão */
-    gap: 2rem; /* Espaçamento entre os itens */ 
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 colunas padrão */
+    gap: 2rem;
+    /* Espaçamento entre os itens */
 }
 
-.pacote{
+.pacote {
     margin-top: 3rem;
     background-color: #5c5c5c;
     text-align: center;
     border-radius: 30px;
     transition: 0.3s ease;
     padding: 1rem;
-    min-width: 200px; /* Evita que a div fique muito pequena */
+    min-width: 200px;
+    /* Evita que a div fique muito pequena */
 }
 
-.pacote:hover{
-   
+.pacote:hover {
+
     transform: scale(1.1);
 }
 
-.pacote h3{
+.pacote h3 {
     color: aliceblue;
     font-weight: 900;
     margin-bottom: 5%;
     margin-top: 5%;
 }
 
-.pacote p{
+.pacote p {
     text-align: start;
     color: aliceblue;
     font-size: 100%;
     margin-top: 5%;
     display: grid;
-    place-items: end center; 
-    
-    
+    place-items: end center;
+
+
 }
 
-.pacote .preco{
+.pacote .preco {
     color: rgb(0, 207, 0);
     font-weight: 700;
     font-size: 1.5rem;
 }
 
 
-.pacote img{
-  
+.pacote img {
+
     height: 15rem;
     object-fit: cover;
-    width: 100%; /* Ajusta as imagens para o tamanho do container */
+    width: 100%;
+    /* Ajusta as imagens para o tamanho do container */
 }
 
 
 @media (max-width: 1200px) {
     .container-packages {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas médias */
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 colunas em telas médias */
     }
 
-   
+
 }
 
 @media (max-width: 768px) {
     .container-packages {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas pequenas */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 colunas em telas pequenas */
     }
 
-    
+
 }
 
 @media (max-width: 480px) {
     .container-packages {
-        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+        grid-template-columns: 1fr;
+        /* 1 coluna em telas muito pequenas */
     }
 }
-
-
-
