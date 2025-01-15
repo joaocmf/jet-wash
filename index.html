@@ -9,164 +9,200 @@
     <title>Lava Jato</title>
 </head>
 
+
+<header>
+    <div class="logo">
+        <img src="img/logo/lava-jato.png" alt="logomarca">
+        <div class="name-brand">
+            <span class="word1">JET</span>
+            <span class="word2">WASH</span>
+        </div>
+    </div>
+
+    <div class="menu-navbar" id="menuNavbar">
+        <div class="menu-icon" id="menu-icon" onclick="mostrarMenu()">
+            <img src="img/icons/menu.png" alt="">
+        </div>
+
+        <ul class="navbar" id="menuLinks">
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#packages">Pacotes</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+        </ul>
+    </div>
+
+</header>
+
+<section class="img-slider">
+    <div class="container-img">
+
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+
+        <div class="slide-box primeira">
+            <img src="img/slider_img/porshe_red_detailing.webp" alt="">
+        </div>
+
+        <div class="slide-box">
+            <img src="img/slider_img/porshe_red_cleanning.webp" alt="">
+        </div>
+
+        <div class="slide-box">
+            <img src="img/slider_img/vitrification_car.jpeg" alt="">
+        </div>
+
+        <div class="slide-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+        </div>
+
+
+        <div class="slide-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+</section>
+
+
+
+
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo/lava-jato.png" alt="logomarca">
-            <div class="name-brand">
-                <span class="word1">JET</span>
-                <span class="word2">WASH</span>
+    <div class="about" id="about">
+        <h1>Sobre Nós</h1>
+        <div class="container-about">
+            <div class="img-about">
+                <img src="img/slider_img/detailing_porshe.jpg" alt="Carro sendo limpo">
             </div>
-        </div>
+            <div class="content-about">
+                <div class="text-about">
+                    <p>
+                        Na Jet-Wash, transformar seu carro em uma verdadeira obra de arte é a nossa paixão. Somos
+                        especializados em cuidado e personalização automotiva, unindo tecnologia de ponta, produtos
+                        premium
+                        e uma equipe altamente capacitada para realçar a beleza e o valor do seu veículo.
+                    </p>
 
-        <div class="menu-navbar" id="menuNavbar">
-            <div class="menu-icon" id="menu-icon" onclick="mostrarMenu()">
-                <img src="img/menu.png" alt="">
-            </div>
-
-            <ul class="navbar" id="menuLinks">
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Contatos</a></li>
-            </ul>
-        </div>
-
-    </header>
-
-    <section class="img-slider">
-        <div class="container-img">
-
-            <input type="radio" name="btn-radio" id="radio1">
-            <input type="radio" name="btn-radio" id="radio2">
-            <input type="radio" name="btn-radio" id="radio3">
-
-
-            <div class="slide-box primeira">
-                <img src="img/slider_img/porshe_red_detailing.webp" alt="">
-            </div>
-
-            <div class="slide-box">
-                <img src="img/slider_img/porshe_red_cleanning.webp" alt="">
-            </div>
-
-            <div class="slide-box">
-                <img src="img/slider_img/vitrification_car.jpeg" alt="">
-            </div>
-
-            <div class="slide-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
-
-
-            <div class="slide-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <body>
-        <div class="about">
-            <h1>Sobre Nós</h1>
-            <div class="container-about">
-                <div class="img-about">
-                    <img src="img/slider_img/detailing_porshe.jpg" alt="Carro sendo limpo">
-                </div>
-                <div class="content-about">
-                    <div class="text-about">
-                        <p>
-                            Na Jet-Wash, transformar seu carro em uma verdadeira obra de arte é a nossa paixão. Somos
-                            especializados em cuidado e personalização automotiva, unindo tecnologia de ponta, produtos
-                            premium
-                            e uma equipe altamente capacitada para realçar a beleza e o valor do seu veículo.
-                        </p>
-
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
-        <div class="packages">
-            <h1>Pacotes</h1>
-            <div class="container-packages">
-                <div class="pacote">
-                    <h3>Pacote básico</h3>
-                    <img src="img/Packages/detailing_mustang.jpg" alt="Pacote básico">
-                    <p class="descricao">Lavagem externa, <br>secagem e limpeza de vidros.</p>
-                    <p class="preco">R$ 60,00</p>
-                </div>
-                <div class="pacote">
-                    <h3>Pacote Completo</h3>
-                    <img src="img/Packages/car_foam1.webp" alt="Pacote básico">
-                    <p class="descricao">Lavagem externa, limpeza de vidros,<br> tapetes e pneus.</p>
-                    <p class="preco">R$ 40,00</p>
-                </div>
-                <div class="pacote">
-                    <h3>Pacote Premium</h3>
-                    <img src="img/Packages/clean_interior.jpeg" alt="Pacote básico">
-                    <p class="descricao">Lavagem completa (externa e interna), <br>limpeza de estofados e polimento de
-                        pneus.</p>
-                    <p class="preco">R$ 120,00</p>
-                </div>
-                <div class="pacote">
-                    <h3>Pacote Vidros e Detalhes</h3>
-                    <img src="img/Packages/car_clean1.jpeg" alt="Pacote básico">
-                    <p class="descricao">Limpeza dos vidros internos e externos,<br> retrovisores e faróis.</p>
-                    <p class="preco">R$ 30,00</p>
-                </div>
+    <div class="packages" id="packages">
+        <h1>Pacotes</h1>
+        <div class="container-packages">
+            <div class="pacote">
+                <h3>Pacote básico</h3>
+                <img src="img/Packages/detailing_mustang.jpg" alt="Pacote básico">
+                <p class="descricao">Lavagem externa, <br>secagem e limpeza de vidros.</p>
+                <p class="preco">R$ 60,00</p>
+            </div>
+            <div class="pacote">
+                <h3>Pacote Completo</h3>
+                <img src="img/Packages/car_foam1.webp" alt="Pacote básico">
+                <p class="descricao">Lavagem externa, limpeza de vidros,<br> tapetes e pneus.</p>
+                <p class="preco">R$ 40,00</p>
+            </div>
+            <div class="pacote">
+                <h3>Pacote Premium</h3>
+                <img src="img/Packages/clean_interior.jpeg" alt="Pacote básico">
+                <p class="descricao">Lavagem completa (externa e interna), <br>limpeza de estofados e polimento de
+                    pneus.</p>
+                <p class="preco">R$ 120,00</p>
+            </div>
+            <div class="pacote">
+                <h3>Pacote Vidros e Detalhes</h3>
+                <img src="img/Packages/car_clean1.jpeg" alt="Pacote básico">
+                <p class="descricao">Limpeza dos vidros internos e externos,<br> retrovisores e faróis.</p>
+                <p class="preco">R$ 30,00</p>
+            </div>
 
-                <!-- linha de baixo dos pacotes-->
-                <div class="pacote">
-                    <h3>Pacote Brilho Rápido</h3>
-                    <img src="img/Packages/aplicacao_de_cera.jpeg" alt="Pacote básico">
-                    <p class="descricao">Lavagem simples, secagem com cera líquida <br>e polimento leve dos vidros.</p>
-                    <p class="preco">R$ 50,00</p>
-                </div>
-                <div class="pacote">
-                    <h3>Pacote Proteção Express</h3>
-                    <img src="img/Packages/lavagem_a_seco.jpeg" alt="Pacote básico">
-                    <p class="descricao">Lavagem completa aplicação de cera protetora <br> e hidratação rápida dos
-                        plásticos internos.</p>
-                    <p class="preco">R$ 100,00</p>
-                </div>
-                <div class="pacote">
-                    <h3>Pacote Estética do Motor</h3>
-                    <img src="img/Packages/lavagem_de_motor.jpg" alt="Pacote básico">
-                    <p class="descricao">Lavagem a seco do motor, tratamento de<br> componentes plásticos e aplicação
-                        <br> de protetor contra poeira.</p>
-                    <p class="preco">R$ 200,00</p>
-                </div>
-                <div class="pacote">
-                    <h3>Pacote Diamante Negro</h3>
-                    <img src="img/Packages/aplicador-insulfilme.webp" alt="Pacote básico">
-                    <p class="descricao">Tratamento completo (interna e externa), <br>polimento espelhado, vitrificação,
-                        higienização <br> interna de luxo e proteção UV nos plásticos.</p>
-                    <p class="preco">R$ 1.200,00</p>
-                </div>
+            <!-- linha de baixo dos pacotes-->
+            <div class="pacote">
+                <h3>Pacote Brilho Rápido</h3>
+                <img src="img/Packages/aplicacao_de_cera.jpeg" alt="Pacote básico">
+                <p class="descricao">Lavagem simples, secagem com cera líquida <br>e polimento leve dos vidros.</p>
+                <p class="preco">R$ 50,00</p>
+            </div>
+            <div class="pacote">
+                <h3>Pacote Proteção Express</h3>
+                <img src="img/Packages/lavagem_a_seco.jpeg" alt="Pacote básico">
+                <p class="descricao">Lavagem completa aplicação de cera protetora <br> e hidratação rápida dos
+                    plásticos internos.</p>
+                <p class="preco">R$ 100,00</p>
+            </div>
+            <div class="pacote">
+                <h3>Pacote Estética do Motor</h3>
+                <img src="img/Packages/lavagem_de_motor.jpg" alt="Pacote básico">
+                <p class="descricao">Lavagem a seco do motor, tratamento de<br> componentes plásticos e aplicação
+                    <br> de protetor contra poeira.
+                </p>
+                <p class="preco">R$ 200,00</p>
+            </div>
+            <div class="pacote">
+                <h3>Pacote Diamante Negro</h3>
+                <img src="img/Packages/aplicador-insulfilme.webp" alt="Pacote básico">
+                <p class="descricao">Tratamento completo (interna e externa), <br>polimento espelhado, vitrificação,
+                    higienização <br> interna de luxo e proteção UV nos plásticos.</p>
+                <p class="preco">R$ 1.200,00</p>
             </div>
         </div>
+    </div>
 
-        <div class="contatos">
-            <div class="contatos-container">
+    <div class="contatos">
+        <div class="contatos-container">
 
-            </div>
         </div>
-
-
-    </body>
-
-
+    </div>
 
 
 </body>
+
+<footer>
+    <div class="container-contatos" id="contatos">
+
+        <h1>Contatos</h1>
+
+
+        <div class="content-contatos">
+            <div class="maps">
+                <h3>Nossa Localização</h3>
+                <img src="img/icons/local.png" alt="">
+                <p>Rua Desenvolvimento Web, nº 123, Quero Estágio | Montes Claros - MG </p>
+
+                <button>Google Maps</button>
+            </div>
+
+            <div class="redes-sociais">
+
+                <h3>Entre em contato através das nossas Redes Sociais:</h3>
+
+                <a href="https://www.instagram.com/joao_cmf/"><img src="img/icons/instagram-logo-8869.png" alt=""></a>
+                <a href="https://wa.me/+553897442841"><img src="img/icons/whatsapp-logo-4450.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/joao-carlos-dv/"><img src="img/icons/linkedin-logo-2430.png" alt=""></a>
+                <a href="https://github.com/joaocmf"><img src="img/icons/github-logo-6533 (1).png" alt=""></a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</footer>
+
+
+
+
+
 
 </html>
